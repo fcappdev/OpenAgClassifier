@@ -1,9 +1,9 @@
-#AGROVOC autocoder
+# AGROVOC autocoder
 
 This Open-Ag auto-classification model is a product of 
 [Foundation Center](http://foundationcenter.org/). It was developed
 by Dave Hollander (dfh@foundationcenter.org) and Bereketab Lakew 
-(bkl@foundationcenter). This project uses Python 3.5.x in order to handle all 
+(bkl@foundationcenter.org). This project uses Python 3.5.x in order to handle all
 UTF-8 encoding issues. 
 
 Training data for this model was obtained from 
@@ -16,7 +16,7 @@ If you wish to host the model locally, the pre-trained models can be
 should be stored in `src\model\clf_data\`. They can be served using the Flask
 server included in this project.
 
-##Install
+## Install
 
 This project contains the scraping code used for extracting training data
 from FAO AGROVOC. If you would like to be able to run the scraping script
@@ -44,20 +44,20 @@ NumPy and SciPy install you will only need to do
     pip install -r requirements.txt
 
 
-##Directories
+## Directories
 
-###data
+## #data
 
 This directory contains the python classes for scraping the FAO AGROVOC coded text 
 documents.  Using the scraping scripts requires either Ubuntu, or MacOS to compile 
 the necessary libraries.
 
-###model
+## #model
 
 This contains all of the classes, scripts and server files for training 
 the AGROVOC models and serving up the prediction API.
 
-##MySQL Setup
+## MySQL Setup
 
 To connect to a MySQL instance within python:
 
@@ -83,7 +83,7 @@ created from the agris_data.csv table contained in
 Finally, run [split_training_test](db/split_training_test.sql) to 
 separate the test and training sets into separate, disjoint sets.
 
-##Training
+## Training
 
 After setting up the MySQL environment, and training data has been collected using
 the included scraping scripts, the models can be trained for each hierarchy by running:
@@ -100,7 +100,7 @@ on-the-fly cross-validation, and we are doing 3-fold cross-validation. Models
 are pickled in `src/data` with a hashed unique-identifier
 as a name prefix to prevent model overwrites.
 
-##Prediction
+## Prediction
 
 The prediction API is served up using Flask which supports both GET
 and POST methods. The models are loaded into memory, which requires >=20GB
