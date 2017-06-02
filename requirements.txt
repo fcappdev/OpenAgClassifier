@@ -1,0 +1,12 @@
+lxml
+dryscrape
+pymysql
+bs4
+nltk
+scipy
+numpy
+scikit-learn==0.18.1
+dill
+flask
+flask-cors
+matplotlib
