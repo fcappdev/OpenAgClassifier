@@ -1,0 +1,555 @@
+L1,L2,L3,L4,L5,L6,L7,Code,Use?
+Products,,,,,,,c_6211,N
+Products,"Plant products",,,,,,c_8171,N
+Products,"Plant products",Cereals,,,,,c_1474,M
+Products,"Plant products",Cereals,barley ,,,,c_823,Y
+Products,"Plant products",Cereals,"coarse grains ",,,,c_25468,N
+Products,"Plant products",Cereals,"feed cereals ",,,,c_2828,N
+Products,"Plant products",Cereals,maize ,,,,c_12332,Y
+Products,"Plant products",Cereals,millets ,,,,c_4838,Y
+Products,"Plant products",Cereals,oats ,,,,c_5287,Y
+Products,"Plant products",Cereals,rice ,,,,c_6599,Y
+Products,"Plant products",Cereals,rye ,,,,c_14010,Y
+Products,"Plant products",Cereals,"sorghum grain ",,,,c_7249,Y
+Products,"Plant products",Cereals,"triticales (product) ",,,,c_7949,M
+Products,"Plant products",Cereals,wheats ,,,,c_8373,Y
+Products,"Plant products","Cocoa products",,,,,c_331527,N
+Products,"Plant products","Cocoa products","cocoa beans ",,,,c_1711,Y
+Products,"Plant products","Cocoa products","cocoa butter ",,,,c_28260,Y
+Products,"Plant products","Coconut water",,,,,c_34238,M
+Products,"Plant products","Coffee beans",,,,,c_28379,Y
+Products,"Plant products","Coffee beans","arabica coffee ",,,,c_566,M
+Products,"Plant products","Coffee beans","congusta coffee ",,,,c_1812,M
+Products,"Plant products","Coffee beans","liberica coffee ",,,,c_4308,M
+Products,"Plant products","Coffee beans","robusta coffee ",,,,c_6626,M
+Products,"Plant products",Fruits,,,,,c_3131,Y
+Products,"Plant products",Fruits,acorns ,,,,c_23986,Y
+Products,"Plant products",Fruits,akee ,,,,c_8697,Y
+Products,"Plant products",Fruits,avocados ,,,,c_9022,Y
+Products,"Plant products",Fruits,bananas ,,,,c_806,Y
+Products,"Plant products",Fruits,carambola ,,,,c_9605,Y
+Products,"Plant products",Fruits,cherimoyas ,,,,c_9761,Y
+Products,"Plant products",Fruits,"citrus fruits ",,,,c_1641,M
+Products,"Plant products",Fruits,"citrus fruits ","bergamot orange ",,,c_9233,Y
+Products,"Plant products",Fruits,"citrus fruits ",calamondins ,,,c_15497,Y
+Products,"Plant products",Fruits,"citrus fruits ",citranges ,,,c_1629,Y
+Products,"Plant products",Fruits,"citrus fruits ",citrons ,,,c_1632,Y
+Products,"Plant products",Fruits,"citrus fruits ",clementines ,,,c_9895,Y
+Products,"Plant products",Fruits,"citrus fruits ",grapefruits ,,,c_3358,Y
+Products,"Plant products",Fruits,"citrus fruits ",lemons ,,,c_4259,Y
+Products,"Plant products",Fruits,"citrus fruits ",limequats ,,,c_4340,Y
+Products,"Plant products",Fruits,"citrus fruits ",limes ,,,c_4341,Y
+Products,"Plant products",Fruits,"citrus fruits ",mandarins ,,,c_4568,Y
+Products,"Plant products",Fruits,"citrus fruits ",orangequats ,,,c_5375,Y
+Products,"Plant products",Fruits,"citrus fruits ",pummelos ,,,c_6367,Y
+Products,"Plant products",Fruits,"citrus fruits ",satsumas ,,,c_6819,Y
+Products,"Plant products",Fruits,"citrus fruits ","seville oranges ",,,c_7006,Y
+Products,"Plant products",Fruits,"citrus fruits ","sweet oranges ",,,c_7550,Y
+Products,"Plant products",Fruits,"citrus fruits ",tangelos ,,,c_7600,Y
+Products,"Plant products",Fruits,"citrus fruits ",tangerines ,,,c_7601,Y
+Products,"Plant products",Fruits,"citrus fruits ",tangors ,,,c_7602,Y
+Products,"Plant products",Fruits,"cucurbit fruits ",,,,c_2005,N
+Products,"Plant products",Fruits,durians ,,,,c_10488,Y
+Products,"Plant products",Fruits,figs ,,,,c_10840,Y
+Products,"Plant products",Fruits,guavas ,,,,c_11392,Y
+Products,"Plant products",Fruits,"jack fruit ",,,,c_11864,Y
+Products,"Plant products",Fruits,kaki ,,,,c_11934,Y
+Products,"Plant products",Fruits,kiwifruits ,,,,c_12002,Y
+Products,"Plant products",Fruits,longans ,,,,c_331528,Y
+Products,"Plant products",Fruits,loquats ,,,,c_12246,Y
+Products,"Plant products",Fruits,lucuma ,,,,c_4456,Y
+Products,"Plant products",Fruits,lychees ,,,,c_12283,Y
+Products,"Plant products",Fruits,mangoes ,,,,c_12367,Y
+Products,"Plant products",Fruits,mangosteen ,,,,c_12368,Y
+Products,"Plant products",Fruits,melons ,,,,c_12487,Y
+Products,"Plant products",Fruits,"out of season fruits ",,,,c_32501,N
+Products,"Plant products",Fruits,papayas ,,,,c_13087,Y
+Products,"Plant products",Fruits,"passion fruits ",,,,c_13127,Y
+Products,"Plant products",Fruits,pineapples ,,,,c_13394,Y
+Products,"Plant products",Fruits,"pome fruits ",,,,c_25497,N
+Products,"Plant products",Fruits,"pome fruits ",apples ,,,c_541,Y
+Products,"Plant products",Fruits,"pome fruits ",pears ,,,c_5645,Y
+Products,"Plant products",Fruits,"pome fruits ",quinces ,,,c_13714,Y
+Products,"Plant products",Fruits,pomegranates ,,,,c_13505,Y
+Products,"Plant products",Fruits,rambutans ,,,,c_13754,Y
+Products,"Plant products",Fruits,"rose hips ",,,,c_50142,M
+Products,"Plant products",Fruits,"safou (fruit) ",,,,c_34775,Y
+Products,"Plant products",Fruits,"soft fruits ",,,,c_7151,N
+Products,"Plant products",Fruits,"soft fruits ",blackberries ,,,c_947,Y
+Products,"Plant products",Fruits,"soft fruits ","black currants ",,,c_945,Y
+Products,"Plant products",Fruits,"soft fruits ",blueberries ,,,c_974,Y
+Products,"Plant products",Fruits,"soft fruits ",cranberries ,,,c_1944,Y
+Products,"Plant products",Fruits,"soft fruits ",dewberries ,,,c_2232,Y
+Products,"Plant products",Fruits,"soft fruits ",gooseberries ,,,c_3333,Y
+Products,"Plant products",Fruits,"soft fruits ",grapes ,,,c_3359,Y
+Products,"Plant products",Fruits,"soft fruits ",mulberries ,,,c_25487,Y
+Products,"Plant products",Fruits,"soft fruits ",raspberries ,,,c_6458,Y
+Products,"Plant products",Fruits,"soft fruits ","red currants ",,,c_6479,Y
+Products,"Plant products",Fruits,"soft fruits ",strawberries ,,,c_7443,Y
+Products,"Plant products",Fruits,"soft fruits ","white currants ",,,c_8379,Y
+Products,"Plant products",Fruits,"stone fruits ",,,,c_25461,N
+Products,"Plant products",Fruits,"stone fruits ",apricots ,,,c_545,Y
+Products,"Plant products",Fruits,"stone fruits ",cherries ,,,c_1534,Y
+Products,"Plant products",Fruits,"stone fruits ",dates ,,,c_25475,Y
+Products,"Plant products",Fruits,"stone fruits ",nectarines ,,,c_5100,Y
+Products,"Plant products",Fruits,"stone fruits ",olives ,,,c_12926,Y
+Products,"Plant products",Fruits,"stone fruits ",peaches ,,,c_5638,Y
+Products,"Plant products",Fruits,"stone fruits ",plums ,,,c_6028,Y
+Products,"Plant products",Fruits,"temperate fruits ",,,,c_7655,N
+Products,"Plant products",Fruits,"tropical fruits ",,,,c_7974,N
+Products,"Plant products",Fruits,watermelons ,,,,c_15277,Y
+Products,"Plant products",Grain,,,,,c_3346,Y
+Products,"Plant products",Legumes,,,,,c_4255,Y
+Products,"Plant products",Legumes,"grain legumes",,,,c_3351,N
+Products,"Plant products",Legumes,"grain legumes",beans ,,,c_331566,Y
+Products,"Plant products",Legumes,"grain legumes","faba beans ",,,c_10722,Y
+Products,"Plant products",Legumes,"grain legumes",frijol (es),,,c_83d70ed7,N
+Products,"Plant products",Legumes,"grain legumes","lima beans ",,,c_12180,Y
+Products,"Plant products",Legumes,"grain legumes","pigeon peas ",,,c_13356,Y
+Products,"Plant products",Nuts,,,,,c_12873,Y
+Products,"Plant products",Nuts,almonds ,,,,c_8734,Y
+Products,"Plant products",Nuts,"brazil nuts ",,,,c_9410,Y
+Products,"Plant products",Nuts,cashews ,,,,c_9647,Y
+Products,"Plant products",Nuts,chestnuts ,,,,c_25467,Y
+Products,"Plant products",Nuts,coconuts ,,,,c_25470,Y
+Products,"Plant products",Nuts,groundnuts ,,,,c_11368,Y
+Products,"Plant products",Nuts,hazelnuts ,,,,c_18248,Y
+Products,"Plant products",Nuts,"kola nuts ",,,,c_25471,Y
+Products,"Plant products",Nuts,"macadamia nuts ",,,,c_12296,Y
+Products,"Plant products",Nuts,pecans ,,,,c_13178,Y
+Products,"Plant products",Nuts,pistachios ,,,,c_13413,Y
+Products,"Plant products",Nuts,"shea nuts ",,,,c_25505,Y
+Products,"Plant products",Nuts,walnuts ,,,,c_15254,Y
+Products,"Plant products",Oilseeds,,,,,c_25490,M
+Products,"Plant products",Oilseeds,"castor beans ",,,,c_18705,Y
+Products,"Plant products",Oilseeds,cottonseed ,,,,c_25473,Y
+Products,"Plant products",Oilseeds,jojoba ,,,,c_11913,Y
+Products,"Plant products",Oilseeds,linseed ,,,,c_12192,Y
+Products,"Plant products",Oilseeds,"niger seed ",,,,c_12827,Y
+Products,"Plant products",Oilseeds,"palm kernels ",,,,c_25493,Y
+Products,"Plant products",Oilseeds,"poppy seed ",,,,c_25498,Y
+Products,"Plant products",Oilseeds,rapeseed ,,,,c_25499,Y
+Products,"Plant products",Oilseeds,"safflower seed ",,,,c_25503,Y
+Products,"Plant products",Oilseeds,sesame ,,,,c_14216,Y
+Products,"Plant products",Oilseeds,"sunflower seed ",,,,c_25507,Y
+Products,"Plant products",Oilseeds,"tobacco seed",,,,c_25509,Y
+Products,"Plant products",Pseudocereals,,,,,c_6301,N
+Products,"Plant products",Pseudocereals,buckwheat ,,,,c_9471,Y
+Products,"Plant products",Pseudocereals,quinoa ,,,,c_13716,Y
+Products,"Plant products",Spices,,,,,c_15685,Y
+Products,"Plant products",Spices,allspice ,,,,c_19193,Y
+Products,"Plant products",Spices,anise ,,,,c_8817,Y
+Products,"Plant products",Spices,balm ,,,,c_25465,Y
+Products,"Plant products",Spices,basil ,,,,c_9093,Y
+Products,"Plant products",Spices,"bay laurel ",,,,c_25508,Y
+Products,"Plant products",Spices,caraway ,,,,c_9607,Y
+Products,"Plant products",Spices,cardamoms ,,,,c_9620,Y
+Products,"Plant products",Spices,chamomile ,,,,c_9733,Y
+Products,"Plant products",Spices,chervil ,,,,c_9772,Y
+Products,"Plant products",Spices,chillies ,,,,c_9795,Y
+Products,"Plant products",Spices,chives ,,,,c_9813,Y
+Products,"Plant products",Spices,cinnamon ,,,,c_9862,Y
+Products,"Plant products",Spices,cloves ,,,,c_23597,Y
+Products,"Plant products",Spices,coriander ,,,,c_10097,Y
+Products,"Plant products",Spices,cumin ,,,,c_10205,Y
+Products,"Plant products",Spices,dill ,,,,c_10377,Y
+Products,"Plant products",Spices,fennel ,,,,c_10789,Y
+Products,"Plant products",Spices,garlic ,,,,c_11091,Y
+Products,"Plant products",Spices,ginger ,,,,c_11157,Y
+Products,"Plant products",Spices,horseradish ,,,,c_11614,Y
+Products,"Plant products",Spices,hyssop ,,,,c_25478,Y
+Products,"Plant products",Spices,juniper ,,,,c_25481,Y
+Products,"Plant products",Spices,mace ,,,,c_25484,Y
+Products,"Plant products",Spices,mint ,,,,c_12606,Y
+Products,"Plant products",Spices,nutmegs ,,,,c_23169,Y
+Products,"Plant products",Spices,oregano ,,,,c_34066,Y
+Products,"Plant products",Spices,paprika ,,,,c_13096,Y
+Products,"Plant products",Spices,parsley ,,,,c_13120,Y
+Products,"Plant products",Spices,pepper ,,,,c_25495,Y
+Products,"Plant products",Spices,rosemary ,,,,c_13963,Y
+Products,"Plant products",Spices,saffron ,,,,c_14023,Y
+Products,"Plant products",Spices,sage ,,,,c_14025,Y
+Products,"Plant products",Spices,savory ,,,,c_14100,Y
+Products,"Plant products",Spices,tarragon ,,,,c_14793,Y
+Products,"Plant products",Spices,thyme ,,,,c_14877,Y
+Products,"Plant products",Spices,turmeric ,,,,c_15048,Y
+Products,"Plant products",Spices,"vanilla (spice) ",,,,c_15126,Y
+Products,"Plant products",Stimulants,,,,,c_7414,N
+Products,"Plant products",Stimulants,betel ,,,,c_891,Y
+Products,"Plant products",Stimulants,coca ,,,,c_9955,Y
+Products,"Plant products",Stimulants,tobacco ,,,,c_7796,Y
+Products,"Plant products",Sugarbeet,,,,,c_7499,Y
+Products,"Plant products",Sugarcane,,,,,c_7501,Y
+Products,"Plant products",Vegetables,,,,,c_8174,Y
+Products,"Plant products",Vegetables,"adzuki beans ",,,,c_8632,Y
+Products,"Plant products",Vegetables,"asparagus beans ",,,,c_670,Y
+Products,"Plant products",Vegetables,"asparagus spears ",,,,c_17156,Y
+Products,"Plant products",Vegetables,aubergines ,,,,c_8998,Y
+Products,"Plant products",Vegetables,"bamboo shoots ",,,,c_801,Y
+Products,"Plant products",Vegetables,"bean sprouts ",,,,c_15889,Y
+Products,"Plant products",Vegetables,beetroot ,,,,c_867,Y
+Products,"Plant products",Vegetables,"bulbous vegetables ",,,,c_1143,N
+Products,"Plant products",Vegetables,cardoons ,,,,c_9623,Y
+Products,"Plant products",Vegetables,carobs ,,,,c_9631,Y
+Products,"Plant products",Vegetables,carrots ,,,,c_9640,Y
+Products,"Plant products",Vegetables,cassava ,,,,c_9649,Y
+Products,"Plant products",Vegetables,catjang ,,,,c_1389,Y
+Products,"Plant products",Vegetables,celeriac ,,,,c_1411,Y
+Products,"Plant products",Vegetables,chickpeas ,,,,c_9785,Y
+Products,"Plant products",Vegetables,chicory ,,,,c_9786,Y
+Products,"Plant products",Vegetables,cowpeas ,,,,c_1938,Y
+Products,"Plant products",Vegetables,cucumbers ,,,,c_10195,Y
+Products,"Plant products",Vegetables,"cucurbit vegetables ",,,,c_2006,N
+Products,"Plant products",Vegetables,drumsticks ,,,,c_330156,N
+Products,"Plant products",Vegetables,"edible fungi ",,,,c_2487,N
+Products,"Plant products",Vegetables,"faba beans ",,,,c_10722,Y
+Products,"Plant products",Vegetables,"fruit vegetables ",,,,c_3129,N
+Products,"Plant products",Vegetables,gherkins ,,,,c_11141,N
+Products,"Plant products",Vegetables,"horse gram ",,,,c_3666,Y
+Products,"Plant products",Vegetables,"inflorescence vegetables ",,,,c_11766,N
+Products,"Plant products",Vegetables,"inflorescence vegetables ",broccoli ,,,c_7339,Y
+Products,"Plant products",Vegetables,"inflorescence vegetables ",cauliflowers ,,,c_1394,Y
+Products,"Plant products",Vegetables,"inflorescence vegetables ","globe artichokes ",,,c_11171,Y
+Products,"Plant products",Vegetables,"Japanese bunching onions ",,,,c_4040,Y
+Products,"Plant products",Vegetables,"Jerusalem artichokes ",,,,c_11903,Y
+Products,"Plant products",Vegetables,"kidney beans ",,,,c_4098,Y
+Products,"Plant products",Vegetables,kohlrabi ,,,,c_4114,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",,,,c_3376,N
+Products,"Plant products",Vegetables,"leaf vegetables ","brussels sprouts ",,,c_1127,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",cabbages ,,,c_1173,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",celery ,,,c_1412,Y
+Products,"Plant products",Vegetables,"leaf vegetables ","chinese cabbages ",,,c_9804,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",endives ,,,c_10596,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",kales ,,,c_4070,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",lettuces ,,,c_12151,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",spinach ,,,c_14508,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",taioba ,,,c_331477,Y
+Products,"Plant products",Vegetables,"leaf vegetables ",watercress ,,,c_15275,Y
+Products,"Plant products",Vegetables,leeks ,,,,c_12128,Y
+Products,"Plant products",Vegetables,lentils ,,,,c_12140,Y
+Products,"Plant products",Vegetables,"mung beans ",,,,c_4988,Y
+Products,"Plant products",Vegetables,okras ,,,,c_12920,Y
+Products,"Plant products",Vegetables,onions ,,,,c_12934,Y
+Products,"Plant products",Vegetables,"out of season vegetables ",,,,c_32502,N
+Products,"Plant products",Vegetables,"palm hearts ",,,,c_28302,Y
+Products,"Plant products",Vegetables,parsnips ,,,,c_13122,Y
+Products,"Plant products",Vegetables,peas ,,,,c_13177,Y
+Products,"Plant products",Vegetables,plantains ,,,,c_5989,Y
+Products,"Plant products",Vegetables,potatoes ,,,,c_13551,Y
+Products,"Plant products",Vegetables,radishes ,,,,c_13735,Y
+Products,"Plant products",Vegetables,rhubarb ,,,,c_11089,Y
+Products,"Plant products",Vegetables,"root vegetables ",,,,c_6647,N
+Products,"Plant products",Vegetables,rutabagas ,,,,c_6713,Y
+Products,"Plant products",Vegetables,salsify ,,,,c_14055,Y
+Products,"Plant products",Vegetables,shallots ,,,,c_14233,Y
+Products,"Plant products",Vegetables,soybeans ,,,,c_14477,Y
+Products,"Plant products",Vegetables,"spinach beet ",,,,c_7303,Y
+Products,"Plant products",Vegetables,squashes ,,,,c_37735,Y
+Products,"Plant products",Vegetables,squashes ,marrows ,,,c_12414,Y
+Products,"Plant products",Vegetables,squashes ,pumpkins ,,,c_6369,Y
+Products,"Plant products",Vegetables,squashes ,"summer squash ",,,c_35856,Y
+Products,"Plant products",Vegetables,squashes ,"winter squashes ",,,c_8411,Y
+Products,"Plant products",Vegetables,"stem vegetables ",,,,c_7388,N
+Products,"Plant products",Vegetables,"sweet corn ",,,,c_7552,Y
+Products,"Plant products",Vegetables,"sweet peppers ",,,,c_14727,Y
+Products,"Plant products",Vegetables,"sweet potatoes ",,,,c_14729,Y
+Products,"Plant products",Vegetables,taro ,,,,c_14791,Y
+Products,"Plant products",Vegetables,tomatoes ,,,,c_7805,Y
+Products,"Plant products",Vegetables,turnips ,,,,c_8019,Y
+Products,"Plant products",Vegetables,urd ,,,,c_8089,Y
+Products,"Plant products",Vegetables,yams ,,,,c_8478,Y
+Products,"Animal products",,,,,,c_438,N
+Products,"Animal products",carcasses ,,,,,c_1310,N
+Products,"Animal products",cocoons ,,,,,c_36538,N
+Products,"Animal products",eggs ,,,,,c_2502,Y
+Products,"Animal products",fish ,,,,,c_15903,Y
+Products,"Animal products","hive products ",,,,,c_3655,N
+Products,"Animal products","hive products ",beeswax ,,,,c_866,M
+Products,"Animal products","hive products ","honeycomb extracts ",,,,c_29026,N
+Products,"Animal products","hive products ",honey ,,,,c_3652,Y
+Products,"Animal products","hive products ",propolis ,,,,c_15919,N
+Products,"Animal products","hive products ","royal jelly ",,,,c_26817,N
+Products,"Animal products",ivory ,,,,,c_16373,N
+Products,"Animal products","livestock products ",,,,,c_12215,N
+Products,"Animal products",meat ,,,,,c_4669,Y
+Products,"Animal products",milk ,,,,,c_4826,Y
+Products,"Processed products",,,,,,c_15742,N
+Products,"Processed products","Processed plant products",,,,,c_29989,N
+Products,"Processed products","Processed plant products","cereal products ",,,,c_1473,N
+Products,"Processed products","Processed plant products","chewing tobacco ",,,,c_9781,N
+Products,"Processed products","Processed plant products",cigarettes ,,,,c_9857,N
+Products,"Processed products","Processed plant products",cigars ,,,,c_9858,N
+Products,"Processed products","Processed plant products","cocoa powder ",,,,c_33967,Y
+Products,"Processed products","Processed plant products","essential oils ",,,,c_2669,Y
+Products,"Processed products","Processed plant products",flours ,,,,c_2988,Y
+Products,"Processed products","Processed plant products","fruit products ",,,,c_3125,N
+Products,"Processed products","Processed plant products",gums ,,,,c_3441,N
+Products,"Processed products","Processed plant products",jaggery ,,,,c_24474,N
+Products,"Processed products","Processed plant products","nut products ",,,,c_5267,N
+Products,"Processed products","Processed plant products",paperboard ,,,,c_5550,N
+Products,"Processed products","Processed plant products",paper ,,,,c_5548,N
+Products,"Processed products","Processed plant products","plant fats ",,,,c_8167,N
+Products,"Processed products","Processed plant products","plant oils ",,,,c_8170,N
+Products,"Processed products","Processed plant products","plant oils ","almond oil ",,,c_8081,Y
+Products,"Processed products","Processed plant products","plant oils ","argan oil ",,,c_37950,Y
+Products,"Processed products","Processed plant products","plant oils ","castor oil ",,,c_25466,Y
+Products,"Processed products","Processed plant products","plant oils ","cedarwood oil ",,,c_1406,Y
+Products,"Processed products","Processed plant products","plant oils ","coconut oil ",,,c_1714,Y
+Products,"Processed products","Processed plant products","plant oils ","cottonseed oil ",,,c_25474,Y
+Products,"Processed products","Processed plant products","plant oils ","groundnut oil ",,,c_25477,Y
+Products,"Processed products","Processed plant products","plant oils ","jasmine oil ",,,c_25480,Y
+Products,"Processed products","Processed plant products","plant oils ","lavender oil ",,,c_25482,Y
+Products,"Processed products","Processed plant products","plant oils ","linseed oil ",,,c_4353,Y
+Products,"Processed products","Processed plant products","plant oils ","maize oil ",,,c_29474,Y
+Products,"Processed products","Processed plant products","plant oils ","mustard oil ",,,c_36137,Y
+Products,"Processed products","Processed plant products","plant oils ","olive oil ",,,c_25491,Y
+Products,"Processed products","Processed plant products","plant oils ","palm kernel oil ",,,c_5515,Y
+Products,"Processed products","Processed plant products","plant oils ","palm oils ",,,c_5514,Y
+Products,"Processed products","Processed plant products","plant oils ","rapeseed oil ",,,c_24939,Y
+Products,"Processed products","Processed plant products","plant oils ","safflower oil ",,,c_25502,Y
+Products,"Processed products","Processed plant products","plant oils ","sesame oil ",,,c_25504,Y
+Products,"Processed products","Processed plant products","plant oils ","soybean oil ",,,c_16508,Y
+Products,"Processed products","Processed plant products","plant oils ","sunflower oil ",,,c_25506,Y
+Products,"Processed products","Processed plant products","plant oils ","tall oil ",,,c_32607,Y
+Products,"Processed products","Processed plant products","plant oils ","tung oil ",,,c_8005,Y
+Products,"Processed products","Processed plant products","plant oils ",turpentine ,,,c_8020,Y
+Products,"Processed products","Processed plant products","plant protein ",,,,c_8172,N
+Products,"Processed products","Processed plant products","potato products ",,,,c_16500,N
+Products,"Processed products","Processed plant products",rubber ,,,,c_6678,Y
+Products,"Processed products","Processed plant products","seaweed products ",,,,c_6915,N
+Products,"Processed products","Processed plant products",snuff ,,,,c_14368,N
+Products,"Processed products","Processed plant products","soybean products ",,,,c_16506,N
+Products,"Processed products","Processed plant products","starch products ",,,,c_15524,N
+Products,"Processed products","Processed plant products","sugarcane juice ",,,,c_32708,N
+Products,"Processed products","Processed plant products",sugar ,,,,c_7498,Y
+Products,"Processed products","Processed plant products","vegetable products ",,,,c_13438,N
+Products,"Processed products","Processed plant products","wood products ",,,,c_16203,N
+Organisms,,,,,,,c_49904,N
+Organisms,Animals,,,,,,c_444,N
+Organisms,Animals,"Aquatic animals",,,,,c_552,N
+Organisms,Animals,"Aquatic animals",Fishes,,,,c_2943,N
+Organisms,Animals,"Aquatic animals",Fishes,"bony fishes ",,,c_1005,N
+Organisms,Animals,"Aquatic animals",Fishes,"brackishwater fishes ",,,c_1051,N
+Organisms,Animals,"Aquatic animals",Fishes,"cartilaginous fishes ",,,c_1343,N
+Organisms,Animals,"Aquatic animals",Fishes,Cyclostomes ,,,c_2060,N
+Organisms,Animals,"Aquatic animals",Fishes,"diadromous fishes ",,,c_2237,N
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",,,c_3105,N
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",barbel ,,c_20762,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",bream ,,c_1075,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",burbots ,,c_1151,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",carp ,,c_1334,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",chars ,,c_1504,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",chub ,,c_32404,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ","freshwater catfish ",,c_3103,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",goldfish ,,c_3326,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",hilsa ,,c_3617,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",perch ,,c_5694,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",pike ,,c_5876,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ","pike perch ",,c_5877,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",roach ,,c_6619,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",sculpins ,,c_6888,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",shad ,,c_7018,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",silversides ,,c_7096,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",tench ,,c_16049,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",tilapia ,,c_32720,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",trout ,,c_7983,Y
+Organisms,Animals,"Aquatic animals",Fishes,"freshwater fishes ",whitefish ,,c_8382,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",,,c_6765,N
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","Alaska pollack ",,c_36887,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",anchovies ,,c_396,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",anglerfish ,,c_414,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",argentines ,,c_605,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","Australian salmon ",,c_717,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",barracudas ,,c_827,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",bluefish ,,c_975,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",bonitos ,,c_1003,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",butterfish ,,c_1165,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",capelin ,,c_1268,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",cod ,,c_1717,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",congers ,,c_1810,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",croakers ,,c_1961,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",cutlassfish ,,c_2045,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",dogfish ,,c_2351,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",dolphinfish ,,c_2353,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",filefish ,,c_2896,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",flatfish ,,c_2961,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",flatheads ,,c_2962,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","flying fish ",,c_3001,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",Girella ,,c_3267,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",goatfish ,,c_3323,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",groupers ,,c_3392,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",grunts ,,c_3402,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",gurnards ,,c_3442,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",haddock ,,c_3458,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",hakes ,,c_3473,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",herrings ,,c_3575,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","horse mackerel ",,c_3667,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","Indian mackerel ",,c_3827,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","john dory ",,c_4050,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",kingmackerel ,,c_4105,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","ling (fish) ",,c_4350,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",lumpfish ,,c_4460,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",mackerel ,,c_4498,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","marine catfish ",,c_4608,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",marlins ,,c_4627,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",Menhaden ,,c_4736,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",Menticirrhus ,,c_4748,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",molas ,,c_4888,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",moonfish ,,c_4930,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",morays ,,c_4935,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",mullets ,,c_4980,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",needlefish ,,c_5102,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",opah ,,c_5361,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",pollack ,,c_6067,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",pomfrets ,,c_6101,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",pompanos ,,c_6102,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","puffers (fish) ",,c_6363,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","rays (fish) ",,c_6467,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",redfish ,,c_6481,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","round herrings ",,c_6671,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sablefish ,,c_6722,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sailfish ,,c_6736,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",saithe ,,c_6739,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sandeels ,,c_6780,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sardinellas ,,c_6812,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sardines ,,c_6813,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sawfish ,,c_6828,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",scorpionfish ,,c_6876,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sculpins ,,c_6888,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","sea bass ",,c_6893,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","sea bream ",,c_6894,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ","sea catfish ",,c_6895,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",shad ,,c_7018,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sharks ,,c_7028,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",silversides ,,c_7069,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",snappers ,,c_7123,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",spearfish ,,c_7278,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",sprats ,,c_7330,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",swordfish ,,c_7559,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",tarpons ,,c_7617,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",threadfins ,,c_7736,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",tomcod ,,c_7806,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",triggerfish ,,c_7925,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",tuna ,,c_8003,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",weakfish ,,c_8338,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",weevers ,,c_8348,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",whitefish ,,c_8382,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",whitings ,,c_8383,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",wrasses ,,c_8451,Y
+Organisms,Animals,"Aquatic animals",Fishes,"saltwater fishes ",yellowtails ,,c_8482,Y
+Organisms,Animals,"Aquatic animals",Shellfish,,,,c_7033,Y
+Organisms,Animals,"Aquatic animals",Shellfish,abalones ,,,c_5,Y
+Organisms,Animals,"Aquatic animals",Shellfish,arkshells ,,,c_617,Y
+Organisms,Animals,"Aquatic animals",Shellfish,barnacles ,,,c_824,Y
+Organisms,Animals,"Aquatic animals",Shellfish,"carpet shells ",,,c_1335,Y
+Organisms,Animals,"Aquatic animals",Shellfish,clams ,,,c_1650,Y
+Organisms,Animals,"Aquatic animals",Shellfish,cockles ,,,c_1709,Y
+Organisms,Animals,"Aquatic animals",Shellfish,crabs ,,,c_1942,Y
+Organisms,Animals,"Aquatic animals",Shellfish,crawfish ,,,c_1949,Y
+Organisms,Animals,"Aquatic animals",Shellfish,crayfish ,,,c_1950,Y
+Organisms,Animals,"Aquatic animals",Shellfish,"date shells ",,,c_2129,Y
+Organisms,Animals,"Aquatic animals",Shellfish,"horseshoe crabs ",,,c_3669,Y
+Organisms,Animals,"Aquatic animals",Shellfish,lobsters ,,,c_4411,Y
+Organisms,Animals,"Aquatic animals",Shellfish,mussels ,,,c_5010,Y
+Organisms,Animals,"Aquatic animals",Shellfish,"ocean quahaug ",,,c_5295,Y
+Organisms,Animals,"Aquatic animals",Shellfish,oysters ,,,c_5484,Y
+Organisms,Animals,"Aquatic animals",Shellfish,"prawns and shrimps ",,,c_6156,Y
+Organisms,Animals,"Aquatic animals",Shellfish,"razor shells ",,,c_6468,Y
+Organisms,Animals,"Aquatic animals",Shellfish,scallops ,,,c_6839,Y
+Organisms,Animals,"Aquatic animals",Shellfish,"sea urchins ",,,c_6902,Y
+Organisms,Animals,"Aquatic animals",Shellfish,"top shells ",,,c_7811,Y
+Organisms,Animals,"Aquatic animals",Shellfish,whelks ,,,c_8375,Y
+Organisms,Animals,"Aquatic animals",Shellfish,winkles ,,,c_8408,Y
+Organisms,Animals,"Useful animals",,,,,c_29108,N
+Organisms,Animals,"Useful animals","Domestic animals",,,,c_2356,N
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,,,c_4397,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,Asses ,,c_676,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,Camels ,,c_1228,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,Cattle ,,c_1391,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,"Domestic buffaloes ",,c_25410,N
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,"Domestic buffaloes ","Water buffaloes",c_8313,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,Gaurs ,,c_3205,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,goats ,,c_3324,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,sheep ,,c_7030,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,Swine ,,c_7555,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,Yaks ,,c_8477,Y
+Organisms,Animals,"Useful animals","Domestic animals",Livestock,Zebu ,,c_8507,Y
+Organisms,Animals,"Useful animals","Domestic animals",Poultry,,,c_6145,Y
+Organisms,Animals,"Useful animals","Domestic animals",Poultry,chickens ,,c_1540,Y
+Organisms,Animals,"Useful animals","Domestic animals",Poultry,ducks ,,c_2406,Y
+Organisms,Animals,"Useful animals","Domestic animals",Poultry,geese ,,c_3208,Y
+Organisms,Animals,"Useful animals","Domestic animals",Poultry,"Guinea fowl ",,c_3425,Y
+Organisms,Animals,"Useful animals","Domestic animals",Poultry,quails ,,c_6399,Y
+Organisms,Animals,"Useful animals","Domestic animals",Poultry,turkeys ,,c_8016,Y
+Organisms,Animals,"Useful animals","Meat animals",,,,c_4670,N
+Organisms,Animals,"Useful animals","Meat animals","beef cattle",,,c_862,Y
+Organisms,Animals,"Useful animals","Meat animals","broiler chickens ",,,c_9435,Y
+Organisms,Animals,"Young animals",,,,,c_8489,N
+Organisms,Animals,"Young animals",calves ,,,,c_1219,Y
+Organisms,Animals,"Young animals",chicks ,,,,c_1541,Y
+Organisms,Animals,"Young animals",cockerels ,,,,c_9959,M
+Organisms,Animals,"Young animals",Fawns ,,,,c_24458,M
+Organisms,Animals,"Young animals",hoggets ,,,,c_11570,Y
+Organisms,Animals,"Young animals",kids ,,,,c_4100,Y
+Organisms,Animals,"Young animals",Kittens ,,,,c_12000,N
+Organisms,Animals,"Young animals",lambs ,,,,c_4163,Y
+Organisms,Animals,"Young animals","newborn animals ",,,,c_12815,N
+Organisms,Animals,"Young animals",piglets ,,,,c_5872,Y
+Organisms,Animals,"Young animals",puppies ,,,,c_13678,N
+Organisms,Females,,,,,,c_15969,N
+Organisms,Females,"Female animals             ",,,,,c_32737,N
+Organisms,Females,"Female animals             ",bitches ,,,,c_9281,N
+Organisms,Females,"Female animals             ",cows ,,,,c_1939,Y
+Organisms,Females,"Female animals             ",ewes ,,,,c_2746,Y
+Organisms,Females,"Female animals             ",Fillies ,,,,c_10844,Y
+Organisms,Females,"Female animals             ",heifers ,,,,c_3535,Y
+Organisms,Females,"Female animals             ",hens ,,,,c_11525,Y
+Organisms,Females,"Female animals             ",Mares ,,,,c_4600,Y
+Organisms,Females,"Female animals             ",nannygoats ,,,,c_5066,Y
+Organisms,Females,"Female animals             ",sows ,,,,c_7271,Y
+Organisms,Males,,,,,,c_15995,N
+Organisms,Males,"Male animals",,,,,c_32738,N
+Organisms,Males,"Male animals",barrows ,,,,c_32386,Y
+Organisms,Males,"Male animals",billygoats ,,,,c_906,Y
+Organisms,Males,"Male animals",boars ,,,,c_977,Y
+Organisms,Males,"Male animals",bullocks ,,,,c_1147,Y
+Organisms,Males,"Male animals",bulls ,,,,c_1148,Y
+Organisms,Males,"Male animals",capons ,,,,c_1277,Y
+Organisms,Males,"Male animals",cockerels ,,,,c_9959,Y
+Organisms,Males,"Male animals",cocks ,,,,c_24006,Y
+Organisms,Males,"Male animals",geldings ,,,,c_3211,Y
+Organisms,Males,"Male animals",rams ,,,,c_6443,Y
+Organisms,Males,"Male animals",stags ,,,,c_24515,Y
+Organisms,Males,"Male animals",Stallions ,,,,c_7362,Y
+Organisms,Males,"Male animals",wethers ,,,,c_8369,Y
+"Substances ",,,,,,,c_330705,N
+"Substances ",Fats,,,,,,c_2816,N
+"Substances ",Fats,"Plant fats",,,,,c_8167,N
+"Substances ",Fats,"Plant fats","cocoa butter ",,,,c_28260,Y
+"Substances ",Fats,"Plant fats","peanut butter ",,,,c_5640,Y
+"Substances ",Fats,"Plant fats","shea butter ",,,,c_37951,Y
+"Substances ",Fibres,,,,,,c_2879,N
+"Substances ",Fibres,"Natural fibres ",,,,,c_1358246728522,M
+"Substances ",Fibres,"Natural fibres ","Animal fibres",,,,c_430,N
+"Substances ",Fibres,"Natural fibres ","Animal fibres",bristles ,,,c_1093,M
+"Substances ",Fibres,"Natural fibres ","Animal fibres",cashmere ,,,c_16484,Y
+"Substances ",Fibres,"Natural fibres ","Animal fibres",mohair ,,,c_24404,Y
+"Substances ",Fibres,"Natural fibres ","Animal fibres",silk ,,,c_7063,Y
+"Substances ",Fibres,"Natural fibres ","Animal fibres",wool ,,,c_8436,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres",,,,c_5966,N
+"Substances ",Fibres,"Natural fibres ","Plant fibres","hard fibres",,,c_3494,N
+"Substances ",Fibres,"Natural fibres ","Plant fibres","hard fibres",Abaca ,,c_4,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","hard fibres",coir ,,c_1734,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","hard fibres",henequen ,,c_11522,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","hard fibres","mexican fibre ",,c_12531,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","hard fibres",sisal ,,c_7086,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",,,c_7150,N
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",cotton ,,c_1926,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",flax ,,c_2970,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",hemp ,,c_3558,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",jute ,,c_4065,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",kapok ,,c_16497,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",kenaf ,,c_4084,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",ramie ,,c_6442,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres",roselle ,,c_6658,Y
+"Substances ",Fibres,"Natural fibres ","Plant fibres","soft fibres","sunn hemp ",,c_7520,Y
