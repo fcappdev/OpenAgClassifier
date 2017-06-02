@@ -111,7 +111,7 @@ the hierarchy 1 model). Thresholds in the config file for the models have
 been determined through cross-validation.
 
 A local MySQL environment should be setup according to
-[the MySQL Setup section](#mysql-setup); specifically you will need 
+[the MySQL Setup section](#user-content-mysql-setup); specifically you will need
 the codes_hierarchy table to read the AGROVOC taxonomy set into
 a lookup dictionary.
 
