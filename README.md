@@ -46,13 +46,13 @@ NumPy and SciPy install you will only need to do
 
 ## Directories
 
-## #data
+## data
 
 This directory contains the python classes for scraping the FAO AGROVOC coded text 
 documents.  Using the scraping scripts requires either Ubuntu, or MacOS to compile 
 the necessary libraries.
 
-## #model
+## model
 
 This contains all of the classes, scripts and server files for training 
 the AGROVOC models and serving up the prediction API.
