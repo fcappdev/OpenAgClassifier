@@ -21,7 +21,7 @@ import sys
 
 
 if __name__ == '__main__':
-    db = MySqlDataBase(c.aws_db)
+    db = MySqlDataBase(c.db)
 
     query = """
     SELECT Code, ifnull(ifnull(ifnull(ifnull(ifnull(L7, L6), L5), L4), L3), L2) AS `description`
@@ -69,7 +69,7 @@ if __name__ == '__main__':
                 data_to_insert.append((doc_id, text, code))
 
             size += len(data_to_insert)
-            db_loc = MySqlDataBase(c.local_db)
+            db_loc = MySqlDataBase(c.db)
             print("Inserted {0} total records".format(size), end='\r')
             sys.stdout.flush()
             db_loc.execute_many(insert, data_to_insert)
