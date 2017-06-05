@@ -7,4 +7,4 @@ bash Anaconda3-4.3.0-Linux-x86_64.sh -b
 export PATH=/home/ubuntu/anaconda3/bin:$PATH
 sudo apt-get install build-essential -y
 conda install -c anaconda qt=4.8.6 -y
-pip install -r reqirements.txt -y
+pip install -r requirements.txt -y
