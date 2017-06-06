@@ -1,10 +1,10 @@
 -- Copyright 2017 Foundation Center. All Rights Reserved.
 --
--- Licensed under the Foundation Center Public License, Version 1.0 (the “License”);
+-- Licensed under the Foundation Center Public License, Version 1.1 (the “License”);
 -- you may not use this file except in compliance with the License.
 -- You may obtain a copy of the License at
 --
---     http://gis.foundationcenter.org/licenses/LICENSE-1.0.html
+--     http://gis.foundationcenter.org/licenses/LICENSE-1.1.html
 --
 -- Unless required by applicable law or agreed to in writing, software
 -- distributed under the License is distributed on an “AS IS” BASIS,
@@ -77,3 +77,12 @@ FROM agrovoc_autocode.agrovoc_terms a
 WHERE `Use?` = 'Y'
 AND L3 <> ''
 AND L4 = '' AND L5 = '' AND L6 = '' AND L7 = '';
+
+
+CREATE TABLE `all_data_codes` (
+  `doc_id` varchar(50) NOT NULL,
+  `text` varchar(4000) DEFAULT NULL,
+  `code` varchar(10) DEFAULT NULL,
+  KEY `doc_id_index` (`doc_id`),
+  KEY `code_index` (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
