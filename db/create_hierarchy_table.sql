@@ -83,6 +83,5 @@ CREATE TABLE `all_data_codes` (
   `doc_id` varchar(50) NOT NULL,
   `text` varchar(4000) DEFAULT NULL,
   `code` varchar(10) DEFAULT NULL,
-  KEY `doc_id_index` (`doc_id`),
   KEY `code_index` (`code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
