@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 # Copyright 2017 Foundation Center. All Rights Reserved.
 #
@@ -21,6 +22,7 @@ from nltk.data import load
 from base.database import MySqlDataBase
 from base.graph import run, bfs
 from base import config as c
+from json_to_xml import dicttoxml
 
 import json
 import os
@@ -117,17 +119,23 @@ def predict():
     if not j:
         j = request.form
 
+    threshold = 0
+    chunk = False
+    xml = False
+
+    if 'chunk' in j and j['chunk'].lower() == 'true':
+        chunk = True
+    if 'threshold' in j and j['threshold'] == 'high':
+        threshold = 1
+    if 'form' in j and j['form'] == 'xml':
+        xml = True
+
     if _validate(j, 'text'):
         st = time.time()
-        text = j['text']
-        threshold = 0
-        chunk = False
 
-        if 'chunk' in j and j['chunk'].lower() == 'true':
+        text = j['text']
+        if chunk:
             text = [sub for sent in sentence_detector.tokenize(text) for sub in sent.split(';')]
-            chunk = True
-        if 'threshold' in j and j['threshold'] == 'high':
-            threshold = 1
 
         # get all predictions, for every hierarchy asynchronously
         results = []
@@ -157,13 +165,16 @@ def predict():
             agg = [{"code": None, "description": None, "confidence": 0.0}]
 
         agg = sorted(agg, key=lambda s: s["confidence"], reverse=True)
-        return Response(response=json.dumps({"success": True, "duration": time.time() - st, "data": agg}, indent=4),
-                        status=200,
-                        mimetype='application/json')
+        response = {"success": True, "duration": time.time() - st, "data": agg}
 
-    return Response(response=json.dumps({"success": False, "status": "Incorrect parameters"}, indent=4),
-                    status=404,
-                    mimetype='application/json')
+        if xml:
+            return Response(response=dicttoxml(response), status=200, mimetype='text/xml')
+        return Response(response=json.dumps(response, indent=4), status=200, mimetype='application/json')
+
+    response = {"success": False, "status": "Incorrect parameters"}
+    if xml:
+        return Response(response=dicttoxml(response), status=200, mimetype='text/xml')
+    return Response(response=json.dumps(response, indent=4), status=404, mimetype='application/json')
 
 
 if __name__ == '__main__':

@@ -136,6 +136,8 @@ The API accepts the following parameters:
     ex) The text 'apples' will predict the 'apples' and 'fruit' AGROVOC codes, but 'fruit' is the parent of 'apples', and so
     with rollup turned on only 'apples' will be returned. (accpets 'true' and 'false', optional, 'true' by default).
     
+    form (string) : specify whether the response is returned in XML (JSON by default, accepts 'xml')
+    
 To make a call to the API from Python you can do:
 
 ```py
