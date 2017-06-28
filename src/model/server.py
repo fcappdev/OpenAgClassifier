@@ -74,23 +74,12 @@ def _validate(js, k):
     return isinstance(js, dict) and k in js
 
 
-print("[INFO] Loading AGROVOC classifiers")
-p1 = _load_to_memory(name='hierarchy_1_76021167-b4ce-463d-bab0-bc7fb044b74b', level=1)
-p2 = _load_to_memory(name='hierarchy_2_2fd8b6a0-6786-42ef-9eea-66ea02a1dfdd', level=2)
-p3 = _load_to_memory(name='hierarchy_3_2b946288-5eeb-4d35-a1fe-6987c118c3b5', level=3)
-p4 = _load_to_memory(name='hierarchy_4_3e787d47-5183-4df2-ba4b-509926f029d3', level=4)
-
-lookup = _get_lookup()
-graph = run(MySqlDataBase(c.db))
-sentence_detector = load("tokenizers/punkt/english.pickle")
-
-
 def taxonomy_rollup(results):
     """
     Does the taxonomy rollup using a graph breadth-first-search
     algorithm
-    :param results: (list of dictionaries) 
-    :return: (list of dictionaries) 
+    :param results: (list of dictionaries)
+    :return: (list of dictionaries)
     """
 
     all_codes = set([r["code"] for r in results])
@@ -105,12 +94,68 @@ def taxonomy_rollup(results):
     return [r for r in results if r["code"] in to_keep if r["code"] is not None]
 
 
+def predict(obj):
+    """
+    Main prediction function
+    :param obj: [text, chunk, threshold, rollup, ID] (list)
+    :return: (dict)
+    """
+
+    text, chunk, threshold, rollup, idx = obj
+    if chunk:
+        text = [sub for sent in sentence_detector.tokenize(text) for sub in sent.split(';')]
+
+    # get all predictions, for every hierarchy asynchronously
+    results = []
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        future_results = {executor.submit(func, (text, lookup, threshold)): idx + 1
+                          for idx, func in enumerate([p1.predict,
+                                                      p2.predict,
+                                                      p3.predict,
+                                                      p4.predict
+                                                      ])}
+        for future in as_completed(future_results):
+            results.extend(future.result())
+
+    # resolve duplication that arises due to chunking (accept the result with the maximum confidence per class)
+    if chunk:
+        results_sort = sorted(results, key=lambda x: (x["code"], x["confidence"]))
+        grouped = itertools.groupby(results_sort, lambda s: s["code"])
+        results = [max(v, key=lambda x: x["confidence"]) for k, v in grouped]
+
+    # add logic to toggle the agrovoc graph roll up on and off
+    if rollup:
+        agg = taxonomy_rollup(results)
+    else:
+        agg = [r for r in results if r["code"] is not None]
+
+    if not agg:
+        agg = [{"code": None, "description": None, "confidence": 0.0}]
+
+    agg = sorted(agg, key=lambda s: s["confidence"], reverse=True)
+
+    if idx is None:
+        return agg
+    return {idx: agg}
+
+
+print("[INFO] Loading AGROVOC classifiers")
+p1 = _load_to_memory(name='hierarchy_1_76021167-b4ce-463d-bab0-bc7fb044b74b', level=1)
+p2 = _load_to_memory(name='hierarchy_2_2fd8b6a0-6786-42ef-9eea-66ea02a1dfdd', level=2)
+p3 = _load_to_memory(name='hierarchy_3_2b946288-5eeb-4d35-a1fe-6987c118c3b5', level=3)
+p4 = _load_to_memory(name='hierarchy_4_3e787d47-5183-4df2-ba4b-509926f029d3', level=4)
+
+lookup = _get_lookup()
+graph = run(MySqlDataBase(c.db))
+sentence_detector = load("tokenizers/punkt/english.pickle")
+
+
 @app.route('/predict', methods=['POST', 'GET'])
 @cross_origin(origin='*', headers=['Content-Type', 'Authorization'])
-def predict():
+def single():
     """
     Single text predictions
-    :return: (JSON)
+    :return: (either JSON or XML based on passed 'form' parameter, JSON by default)
     """
 
     j = request.get_json()
@@ -120,6 +165,7 @@ def predict():
         j = request.form
 
     threshold = 0
+    rollup = True
     chunk = False
     xml = False
 
@@ -129,43 +175,74 @@ def predict():
         threshold = 1
     if 'form' in j and j['form'] == 'xml':
         xml = True
+    if 'roll_up' in j and j['roll_up'].lower() == 'false':
+        rollup = False
 
     if _validate(j, 'text'):
         st = time.time()
 
         text = j['text']
-        if chunk:
-            text = [sub for sent in sentence_detector.tokenize(text) for sub in sent.split(';')]
+        agg = predict([text, chunk, threshold, rollup, None])
+        response = {"success": True, "duration": time.time() - st, "data": agg}
 
-        # get all predictions, for every hierarchy asynchronously
+        if xml:
+            return Response(response=dicttoxml(response), status=200, mimetype='text/xml')
+        return Response(response=json.dumps(response, indent=4), status=200, mimetype='application/json')
+
+    response = {"success": False, "status": "Incorrect parameters"}
+    if xml:
+        return Response(response=dicttoxml(response), status=200, mimetype='text/xml')
+    return Response(response=json.dumps(response, indent=4), status=404, mimetype='application/json')
+
+
+@app.route('/batch', methods=['POST'])
+@cross_origin(origin='*', headers=['Content-Type', 'Authorization'])
+def batch():
+    """
+    Batch, asynchronous text predictions. Only accepts POST requests
+    :return: (either JSON or XML based on passed 'form' parameter, JSON by default)
+    """
+
+    j = request.get_json()
+    if not j:
+        j = request.form
+
+    threshold = 0
+    rollup = True
+    chunk = False
+    xml = False
+
+    if 'chunk' in j and j['chunk'].lower() == 'true':
+        chunk = True
+    if 'threshold' in j and j['threshold'] == 'high':
+        threshold = 1
+    if 'form' in j and j['form'] == 'xml':
+        xml = True
+    if 'roll_up' in j and j['roll_up'].lower() == 'false':
+        rollup = False
+
+    if _validate(j, 'data') and isinstance(j['data'], dict):
+        st = time.time()
+        master = []
+        text_batch = []
+
+        count = 1
+        for k in j['data']:
+            text = j['data'][k]['text'] if 'text' in j['data'][k] else ''
+            text_batch.append([text, chunk, threshold, rollup, k])
+
+            if count % 10 == 0 or count == len(j['data']):
+                master.extend(text_batch[:])
+                del text_batch[:]
+            count += 1
+
         results = []
         with ThreadPoolExecutor(max_workers=4) as executor:
-            future_results = {executor.submit(func, (text, lookup, threshold)): idx + 1
-                              for idx, func in enumerate([p1.predict,
-                                                          p2.predict,
-                                                          p3.predict,
-                                                          p4.predict
-                                                          ])}
+            future_results = {executor.submit(predict, batch_item): idx + 1 for idx, batch_item in enumerate(master)}
             for future in as_completed(future_results):
-                results.extend(future.result())
+                results.append(future.result())
 
-        # resolve duplication that arises due to chunking (accept the result with the maximum confidence per class)
-        if chunk:
-            results_sort = sorted(results, key=lambda x: (x["code"], x["confidence"]))
-            grouped = itertools.groupby(results_sort, lambda s: s["code"])
-            results = [max(v, key=lambda x: x["confidence"]) for k, v in grouped]
-
-        # add logic to toggle the agrovoc graph roll up on and off
-        if 'roll_up' in j and j['roll_up'].lower() == 'false':
-            agg = [r for r in results if r["code"] is not None]
-        else:
-            agg = taxonomy_rollup(results)
-
-        if not agg:
-            agg = [{"code": None, "description": None, "confidence": 0.0}]
-
-        agg = sorted(agg, key=lambda s: s["confidence"], reverse=True)
-        response = {"success": True, "duration": time.time() - st, "data": agg}
+        response = {"success": True, "duration": time.time() - st, "data": results}
 
         if xml:
             return Response(response=dicttoxml(response), status=200, mimetype='text/xml')

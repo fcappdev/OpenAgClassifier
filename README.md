@@ -145,12 +145,60 @@ import json
 from urllib import request
 
 url = "http://hostname:9091/predict"
-opts = {"text": "I want to grow apples. I'm interested in raising cows."
+opts = {"text": "I want to grow apples. I'm interested in raising cows.",
         "chunk": "true",
         "threshold": "low",
         "rollup": "false"
         }
         
+req = request.Request(url, data=json.dumps(opts).encode('utf8'), headers={"Content-Type": "application/json"})
+response = request.urlopen(req).read().decode('utf8')
+print(response)
+```
+
+For processing multiple documents, there is a batch prediction 
+API endpoint which can process each document asynchronously. In 
+order to submit jobs to this endpoint the passed data should be
+in the following JSON structure:
+
+```js
+{
+    "doc_key_1": {
+        "text": "text_1"
+    },
+    "doc_key_2": {
+        "text": "text_2"
+    },
+    "doc_key_3": {
+        "text": "text_3"
+    },
+    "doc_key_4": {
+        "text": "text_4"
+    }
+}
+```
+
+The batch endpoint only accepts POST requests, and returns predictions
+as a JSON with the document key values as the unique identifiers
+for each set of predictions. Queries can be made such as
+
+```py
+import json
+from urllib import request
+
+url = "http://hostname:9091/batch"
+data = {"doc_key_1": {"text": "text_1"},
+        "doc_key_2": {"text": "text_2"},
+        "doc_key_3": {"text": "text_3"},
+        "doc_key_4": {
+        "text": "text_4"}}
+
+opts = {"data": data,
+        "chunk": "true",
+        "threshold": "low",
+        "rollup": "true"
+        }
+
 req = request.Request(url, data=json.dumps(opts).encode('utf8'), headers={"Content-Type": "application/json"})
 response = request.urlopen(req).read().decode('utf8')
 print(response)
