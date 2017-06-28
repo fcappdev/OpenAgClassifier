@@ -190,8 +190,7 @@ url = "http://hostname:9091/batch"
 data = {"doc_key_1": {"text": "text_1"},
         "doc_key_2": {"text": "text_2"},
         "doc_key_3": {"text": "text_3"},
-        "doc_key_4": {
-        "text": "text_4"}}
+        "doc_key_4": {"text": "text_4"}}
 
 opts = {"data": data,
         "chunk": "true",
