@@ -140,7 +140,7 @@ The API accepts the following parameters:
     
 To make a call to the API from Python you can do:
 
-```py
+```python
 import json
 from urllib import request
 
@@ -161,7 +161,7 @@ API endpoint which can process each document asynchronously. In
 order to submit jobs to this endpoint the passed data should be
 in the following JSON structure:
 
-```js
+```json
 {
     "doc_key_1": {
         "text": "text_1"
@@ -182,7 +182,7 @@ The batch endpoint only accepts POST requests, and returns predictions
 as a JSON with the document key values as the unique identifiers
 for each set of predictions. Queries can be made such as
 
-```py
+```python
 import json
 from urllib import request
 
