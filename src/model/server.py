@@ -94,14 +94,24 @@ def taxonomy_rollup(results):
     return [r for r in results if r["code"] in to_keep if r["code"] is not None]
 
 
-def predict(obj):
+def predict(text, chunk, threshold, rollup, idx=None):
     """
     Main prediction function
-    :param obj: [text, chunk, threshold, rollup, ID] (list)
+    :param text: (str)
+    :param chunk: (bool)
+    :param threshold: use high or low cut on the confidence scores (str, accepts 'high' or 'low')
+    :param rollup: do code hierarchy (graph) rollup to most specific (bool)
+    :param idx: (str, optional)
     :return: (dict)
     """
 
-    text, chunk, threshold, rollup, idx = obj
+    if not text:
+        agg = [{"code": None, "description": None, "confidence": 0.0}]
+        if idx is None:
+            return agg
+        return {idx: agg}
+
+    # text, chunk, threshold, rollup, idx = obj
     if chunk:
         text = [sub for sent in sentence_detector.tokenize(text) for sub in sent.split(';')]
 
@@ -137,6 +147,21 @@ def predict(obj):
     if idx is None:
         return agg
     return {idx: agg}
+
+
+def array_predict(obj):
+    """
+    Batched prediction sub-routine
+    :param obj: [text, chunk, threshold, rollup, ID] (list)
+    :return: (list of dicts)
+    """
+
+    all_predictions = []
+    for text, chunk, threshold, rollup, idx in obj:
+        r = predict(text, chunk, threshold, rollup, idx)
+        all_predictions.append(r)
+
+    return all_predictions
 
 
 print("[INFO] Loading AGROVOC classifiers")
@@ -182,7 +207,7 @@ def single():
         st = time.time()
 
         text = j['text']
-        agg = predict([text, chunk, threshold, rollup, None])
+        agg = predict(text=text, chunk=chunk, threshold=threshold, rollup=rollup, idx=None)
         response = {"success": True, "duration": time.time() - st, "data": agg}
 
         if xml:
@@ -199,9 +224,9 @@ def single():
 @cross_origin(origin='*', headers=['Content-Type', 'Authorization'])
 def batch():
     """
-    Batch, asynchronous text predictions. Only accepts POST requests
-    :return: (either JSON or XML based on passed 'form' parameter, JSON by default)
-    """
+   Batch, asynchronous text predictions. Only accepts POST requests
+   :return: (either JSON or XML based on passed 'form' parameter, JSON by default)
+   """
 
     j = request.get_json()
     if not j:
@@ -223,22 +248,16 @@ def batch():
 
     if _validate(j, 'data') and isinstance(j['data'], dict):
         st = time.time()
-        master = []
         text_batch = []
-
-        count = 1
         for k in j['data']:
             text = j['data'][k]['text'] if 'text' in j['data'][k] else ''
             text_batch.append([text, chunk, threshold, rollup, k])
 
-            if count % 10 == 0 or count == len(j['data']):
-                master.extend(text_batch[:])
-                del text_batch[:]
-            count += 1
-
+        master = [text_batch[int((i / 4) * len(text_batch)): int(((i + 1) / 4) * len(text_batch))] for i in range(4)]
         results = []
         with ThreadPoolExecutor(max_workers=4) as executor:
-            future_results = {executor.submit(predict, batch_item): idx + 1 for idx, batch_item in enumerate(master)}
+            future_results = {executor.submit(array_predict, batch_item): idx + 1
+                              for idx, batch_item in enumerate(master)}
             for future in as_completed(future_results):
                 results.append(future.result())
 
