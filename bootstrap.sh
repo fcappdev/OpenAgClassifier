@@ -8,3 +8,7 @@ export PATH=/home/ubuntu/anaconda3/bin:$PATH
 sudo apt-get install build-essential -y
 conda install -c anaconda qt=4.8.6 -y
 pip install -r requirements.txt -y
+
+python -m nltk.downloader punkt
+python - nltk.downloader stopwords
+python -m nltk.downloader wordnet
