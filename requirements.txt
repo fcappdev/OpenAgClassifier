@@ -10,3 +10,4 @@ dill
 flask
 flask-cors
 matplotlib
+pandas

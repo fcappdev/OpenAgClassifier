@@ -8,3 +8,7 @@ export PATH=/home/ubuntu/anaconda3/bin:$PATH
 sudo apt-get install build-essential -y
 conda install -c anaconda qt=4.8.6 -y
 pip install -r requirements.txt -y
+python - <<EOF
+import nltk
+nltk.download('all-corpora')
+EOF
