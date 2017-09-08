@@ -9,8 +9,9 @@ UTF-8 encoding issues.
 Training data for this model was obtained from 
 [Food and Agriculture Organization of the United Nations](http://agris.fao.org/agris-search/index.do).
 
-The predictions are available for free via the `/text/ag_classification` REST API endpoint
-at [apibeta.foundationcenter.org](https://apibeta.foundationcenter.org/docs/v2.0/documentation.html#/README).
+The predictions are available as a free service through the Foundation Center's API via the 
+`/text/ag_classification` REST API endpoint at [api.foundationcenter.org](https://api.foundationcenter.org).
+
 If you wish to host the model locally, the pre-trained models can be 
 [downloaded](https://s3.amazonaws.com/fc-public/svm/open_ag_models.zip), and 
 should be stored in `src\model\clf_data\`. They can be served using the Flask
